@@ -379,9 +379,7 @@ require('Comment').setup({
 })
 
 -- Crates Nvim
-require('crates').setup({
-
-})
+require('crates').setup()
 
 -- LSP Config
 local nvim_lsp = require 'lspconfig'

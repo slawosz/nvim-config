@@ -10,9 +10,9 @@ return require('packer').startup(function(use)
   use 'williamboman/mason-lspconfig.nvim' -- manage LSP binaries
   use 'overcache/NeoSolarized'
   use { 'kyazdani42/nvim-tree.lua', -- Filesystem navigation
-    requires = 'kyazdani42/nvim-web-devicons' } -- Filesystem icons
+  requires = 'kyazdani42/nvim-web-devicons' } -- Filesystem icons
   use { 'nvim-lualine/lualine.nvim', -- Statusline
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
+  requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
   use {
     "windwp/nvim-autopairs", -- Autocomplete (), {}, []
     config = function() require("nvim-autopairs").setup {} end
@@ -41,7 +41,6 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-path' -- Useful completion sources
   use 'hrsh7th/cmp-buffer' -- Useful completion sources
   use 'simrat39/rust-tools.nvim' -- rust-analyzer hints and more!
-  use 'saecki/crates.nvim' -- Help managing crates dependencies
   use 'hrsh7th/vim-vsnip' -- Snippet engine
   use 'nvim-lua/popup.nvim' -- Poup for telescope
   use 'nvim-treesitter/nvim-treesitter' -- better syntax
@@ -54,6 +53,11 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-cmdline'
   use 'nvim-pack/nvim-spectre'
   use "rafamadriz/friendly-snippets"
+  use {
+    'saecki/crates.nvim',
+    tag = 'v0.3.0',
+    requires = { 'nvim-lua/plenary.nvim' },
+  }
 
   use { 'neoclide/coc.nvim', branch = 'release' }
 end)
