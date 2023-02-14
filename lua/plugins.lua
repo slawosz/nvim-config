@@ -19,6 +19,8 @@ return require('packer').startup(function(use)
   }
   use 'lewis6991/impatient.nvim' -- Makes neovim faster
   use 'tpope/vim-surround'
+  use 'puremourning/vimspector'
+  use 'tpope/vim-rails'
   use { 'phaazon/hop.nvim', branch = 'v2' } -- Navitage to any word in the file
   use 'onsails/lspkind.nvim' -- shows icons in cmp
   use 'j-hui/fidget.nvim' -- sho status of nvim-lsp progress

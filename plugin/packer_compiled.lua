@@ -315,6 +315,11 @@ _G.packer_plugins = {
     path = "/home/slawosz/.local/share/nvim/site/pack/packer/start/vim-matchup",
     url = "https://github.com/andymass/vim-matchup"
   },
+  ["vim-rails"] = {
+    loaded = true,
+    path = "/home/slawosz/.local/share/nvim/site/pack/packer/start/vim-rails",
+    url = "https://github.com/tpope/vim-rails"
+  },
   ["vim-surround"] = {
     loaded = true,
     path = "/home/slawosz/.local/share/nvim/site/pack/packer/start/vim-surround",
@@ -329,6 +334,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/slawosz/.local/share/nvim/site/pack/packer/start/vim-vsnip",
     url = "https://github.com/hrsh7th/vim-vsnip"
+  },
+  vimspector = {
+    loaded = true,
+    path = "/home/slawosz/.local/share/nvim/site/pack/packer/start/vimspector",
+    url = "https://github.com/puremourning/vimspector"
   }
 }
 
